@@ -1,1 +1,207 @@
 # MY-WA-site
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My WORSHIP ACT (WA)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf5;
+      color: #2c2c2c;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 3em;
+      max-width: 80%;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+      animation: slideDown 1s ease-out;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #f9f1e9;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #d4af37;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .two-cols {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      animation: fadeInUp 1s ease-in;
+    }
+    .two-cols img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .two-cols img:hover {
+      transform: scale(1.03);
+    }
+    .badge-container {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .badge {
+      background: #f0e6d6;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9em;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #d4af37;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #c79f2b;
+    }
+    footer {
+      background-color: #f9f1e9;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Un espace pour grandir, se relever et impacter</h1>
+  </header>
+
+  <nav>
+    <a href="#apropos">À propos</a>
+    <a href="#formations">Formations</a>
+    <a href="#ressources">Ressources</a>
+    <a href="#membre">Espace Membre</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="apropos">
+    <h2>Ce que nous portons</h2>
+    <div class="badge-container">
+      <div class="badge">Clarté</div>
+      <div class="badge">Vérité</div>
+      <div class="badge">Service</div>
+      <div class="badge">Discipline</div>
+    </div>
+    <div class="two-cols">
+      <div>
+        <p>Chez WA, nous croyons en l'humain. En sa capacité à se réinventer, à apprendre autrement et à servir avec impact. Un projet qui rassemble ceux qui veulent avancer, ensemble.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1531933251808-e5c4f49a3eac?auto=format&fit=crop&w=800&q=80" alt="Groupe WA" />
+    </div>
+  </section>
+
+  <section id="formations">
+    <h2>Apprendre autrement</h2>
+    <div class="two-cols">
+      <img src="https://images.unsplash.com/photo-1600047507281-4ca3b5c0006f?auto=format&fit=crop&w=800&q=80" alt="Formation WA" />
+      <div>
+        <p><strong>Formation AVS</strong> – accompagnement d’enfants à besoins particuliers</p>
+        <ul>
+          <li>Comprendre l’autisme, le HPI, le TDAH</li>
+          <li>Intervenir dans le quotidien scolaire et familial</li>
+        </ul>
+        <p><strong>Format :</strong> en ligne ou présentiel<br>
+        <strong>Durée :</strong> 4 semaines<br>
+        <strong>Prix :</strong> 50 000 FCFA</p>
+        <form action="https://www.paypal.com" method="get">
+          <input type="hidden" name="amount" value="50000" />
+          <button class="btn" type="submit">S'inscrire maintenant</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="ressources">
+    <h2>Ressources gratuites</h2>
+    <p>Accès immédiat à :<br>
+    • Audio : Quand tout ralentit, que fais-tu ?<br>
+    • Mini vidéo : 5 questions à te poser chaque matin<br>
+    • Article : L’art d’aider sans s’oublier</p>
+    <a href="#" class="btn">Télécharger mon guide gratuit</a>
+  </section>
+
+  <section id="membre">
+    <h2>Avancer ensemble</h2>
+    <p>Un espace privé pour accéder à des ressources exclusives, replays, exercices, et rejoindre le groupe WA privé.</p>
+    <a href="#" class="btn">Accéder à mon espace</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : contact@myworshipact.org<br>
+    WhatsApp : +237 6 55 55 55 55<br>
+    Instagram : @myworshipact</p>
+    <form action="mailto:contact@myworshipact.org" method="post" enctype="text/plain">
+      <label>Nom : <input type="text" name="name"></label><br><br>
+      <label>Email : <input type="email" name="email"></label><br><br>
+      <label>Message :<br><textarea name="message" rows="5" cols="40"></textarea></label><br><br>
+      <button class="btn" type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 My WORSHIP ACT – Tous droits réservés.
+  </footer>
+</body>
+</html>
